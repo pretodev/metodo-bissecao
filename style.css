@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+h1, h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+table  {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+table th, table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.number-col {
+    text-align: right;
+}
+
+.changed-col {
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+}
+
+.method-description {
+    max-width: 320px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+section {
+    background: #f0f1f2;
+    color: #575e63; 
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex: 0 2.5rem;
+    padding: 0 1rem 0 1rem;
+    color: #26282b;
+    background: #b7bcc0;
+}
+
+header h1 {
+    flex: 1;
+}
+
+.button {
+    cursor: pointer;
+    color: #26282b;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    border-radius: .125rem;
+    background: rgba(240,241,242,0.35);
+    transition: background-color .2s ease-out;
+    transition: opacity .2s ease-out;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+    line-height: normal;
+    user-select: none;
+    border: 1px solid transparent;
+}
+
+article {
+    flex: 1;
+    padding: 1em;
+}
+
+.app__section--expression {
+    flex: 0 10rem;
+}
+
+.app__section--expression header {
+    background: #70b0e0;
+}
+
+.app__section--expression article {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#input-expression {
+    border: none;
+    background: transparent;
+}
+
+.method-description {
+    background: #282b2d;
+}
+
+.method-description header{
+    background: transparent;
+    color: #70b0e0;
+}
+
+.method-description article{
+    background: transparent;
+    color: #b7bcc0;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    margin-right: 16px;
+}
+
+.input-container label {
+    margin-right: 8px;
+}
+
+.input-group {
+    display: flex;
+}

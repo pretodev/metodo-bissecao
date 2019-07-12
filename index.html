@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="method-description">
+            <header>
+                <h1>Método de Bisseção</h1>
+            </header>
+            <article>
+                <p>Desenovolvido por Silas Santos</p>
+            </article>
+        </section>
+        <div class="app">
+            <section class="app__section  app__section--expression">
+                <form id="problem-inputs">
+                    <header>
+                        <h1>Expressão</h1>
+                        <div class="control-bar">
+                            <button class="button" type="submit">
+                                Calcular
+                            </button>
+                        </div>
+                    </header>
+                    <article>
+                        <div class="input-container input-container--func">
+                            <label>f(x) = </label>
+                            <input name="function" placeholder="Defina sua função" id="input-expression" />
+                        </div>
+                        <div class="input-group">
+                            <div class="input-container input-container--interval">
+                                <label>A = </label>
+                                <input name="intervalA" placeholder="Intervalo A" id="input-expression" type="number" step="any" />
+                            </div>
+                            <div class="input-container input-container--interval">
+                                <label>B = </label>
+                                <input name="intervalB" placeholder="Intervalo B" id="input-expression" type="number" step="any" />
+                            </div>
+                        </div>
+                    </article>
+                </form>
+            </section>
+            <section class="app__section app__section--result">
+                <header>
+                    <h1>Resultado</h1>
+                </header>
+                <article>
+                    <h3>Resultado <span id="final-result"></span></h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Indice</th>
+                                <th>a</th>
+                                <th>b</th>
+                                <th>xi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="result">
+
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+    <!--
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML-full">
+    </script>
+    <script src="script.js"></script>
+    -->
+</body>
+
+</html>
