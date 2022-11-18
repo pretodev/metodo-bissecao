@@ -14,7 +14,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
